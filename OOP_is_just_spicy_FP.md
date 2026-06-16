@@ -1,6 +1,6 @@
 # Preliminary Info
 
-The core of OOP is the idea of solely interacting with data through an "interface": a set of behaviors that "constitute" that object's operations.
+The core of OOP is the idea of solely interacting with data through an "interface": a set of behaviors that "constitute" that object's operations. (not the keyword)
 
 Basically, instead of manually doing things to the data in the box, you:
 1. Seal the box,
@@ -14,9 +14,9 @@ One point of solely interacting through an object's "interface" is that if someo
 
 &nbsp;
 
-Something interesting is that a lot of languages have classes implicitly declare an interface (the set of all of its public members) corresponding to their types, which yeah I wouldn't say that's a bad thing, but it distracts from what's really going on.
+Something interesting is that a lot of languages have classes implicitly have an interface corresponding to a class's type: the set of all of its public members.  I wouldn't say that's a bad thing, but it masks what's really going on.
 
-The first two examples I show are just explicitly showing that true model of an object: its "interface" (not "interface class", I mean "the way you interact with it"), its state (the data that interface acts on), and the implementation of the interface to do the things the interface describes.
+The first two examples I show below are just explicitly extracting that true model of an object: its "interface" (again, not "interface class", I mean "the way you interact with it"), its state (the data that interface acts on), and the implementation of the interface to do the things the interface describes.
 
 &nbsp;
 
