@@ -93,17 +93,21 @@ Is this:
 ```kotlin
 interface IMyDataInterface {
 	fun addNumber(myData: MyDataType, number: Int)
+
+	fun getNumber(myData: MyDataType): Int
 }
 
 fun foo(itf: IMyDataInterface, myData: MyDataType) {
 	itf.addNumber(myData, 2)
+	val x = itf.getNumber(myData)
 }
 ```
 *fundamentally* different from this?
 
 ```kotlin
-fun foo(addNumber: (MyDataType, Int) -> Unit, myData: MyDataType) {
+fun foo(addNumber: (MyDataType, Int) -> Unit, getNumber: (MyDataType) -> Int, myData: MyDataType) {
 	addNumber(myData, 2)
+	val x = getNumber(myData)
 }
 ```
 
