@@ -197,3 +197,20 @@ In the end, there's more-"object oriented" styles and more-"functional" styles, 
 It's all fundamentally the same toolbox.  It's only once we embrace it, once we learn to grow outside our little shells, that we become strong enough to face our true enemy: 
 
 JavaScript.
+
+
+<br><br><br><br><br><br>
+
+
+<hr>
+
+
+
+PS:
+
+Now obviously, I'm not saying they're "the same thing". There are different styles of programming that make something "more functional" or "more object-oriented". In fact, the "pure" versions of both OOP and FP are extremely easy to identify: pure OOP being the endpoint of leaning into the naming, and pure FP being the endpoint of leaning into the free functions, and neither really being that much fun to work with.
+
+But my point is that the fundamentals of both are the same, just like how derivatives and integrals form two sides of Calculus. If you try to defend one and chastise the other, you can't use either effectively, and just dig yourself deeper into a hole of design patterns to make up for how inflexible you've left yourself. In truth, once we dissect how OOP really works, we can deconstruct it to replace most design patterns with something that borrows from each of them - Factories with constructor references, listeners with function references, list mapping with transducers - all without violating any OOP principles.
+
+It's only once we intuitively understand their foundations that we can use OOP less rigidly and FP more structured, creating something that's far greater than the sum of its parts.
+
