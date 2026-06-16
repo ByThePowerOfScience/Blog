@@ -20,7 +20,7 @@ The first two examples I show below are just explicitly extracting that true mod
 
 &nbsp;
 
-You also have a ton of design patterns laid on top of that, like the "actor model", where each object has a "job" and you solely hand off tasks between those "workers".  That's something I originally conflated with OOP as a whole, but after debating my theories with someone else, I realized that it's largely built on top of OOP and doesn't constitute it.
+You also have a ton of design patterns laid on top of that, like the "actor model", where each object "does something" and you solely hand off tasks between those "actors".  That's something I originally conflated with OOP as a whole, but after debating my theories with someone else, I found that it's largely built _on top of_ OOP and doesn't actually _constitute_ it.
 
 &nbsp;
 
