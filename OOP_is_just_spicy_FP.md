@@ -1,3 +1,30 @@
+# Preliminary Info
+
+The core of OOP is the idea of solely interacting with data through an "interface": a set of behaviors that "constitute" that object's operations.
+
+Basically, instead of manually doing things to the data in the box, you:
+1. Seal the box,
+2. Give it ways to be interacted with, and
+3. Just use the ways instead of opening the box.
+
+
+I like to think of it as the buttons on a cash register: rather than manually manipulating wires and modifying the internal state of the cash register directly, it exposes certain things it can do through its buttons, and pressing each one does a different thing.  You can just view it from the outside as "a cash register", not "a box of wires that takes the shape of a cash register".
+ 
+One point of solely interacting through an object's "interface" is that if someone puts the exact same buttons on something else, and they did the exact same thing, then it doesn't matter if it's a bunch of squirrels on the inside opening the drawer instead of wires, that thing's still a cash register.  That's where *polymorphism*, usually regarded as the primary principle of OOP, comes into play.
+
+&nbsp;
+
+Something interesting is that a lot of languages have classes implicitly declare an interface (the set of all of its public members) corresponding to their types, which yeah I wouldn't say that's a bad thing, but it distracts from what's really going on.
+
+The first two examples I show are just explicitly showing that true model of an object: its "interface" (not "interface class", I mean "the way you interact with it"), its state (the data that interface acts on), and the implementation of the interface to do the things the interface describes.
+
+&nbsp;
+
+You also have a ton of design patterns laid on top of that, like the "actor model", where each object has a "job" and you solely hand off tasks between those "workers".  That's something I originally conflated with OOP as a whole, but after debating my theories with someone else, I realized that it's largely built on top of OOP and doesn't constitute it.
+
+&nbsp;
+
+# The Realization
 
 Ok, so follow me here.  Let's look at a standard "class" in OOP:
 
@@ -39,7 +66,7 @@ fun foo(myData: IMyDataInterface) {
 }
 ```
 
-It isn't, right?  This is a principal abstraction in OOP, hiding the data type itself behind an interface, such that you can swap out any implementation of that interface for *any other* implementation.  We can all agree on that.
+It isn't, right? As mentioned above, this is just extracting the implicit "interface" from the object, turning the ways you're supposed to interact with it into a type all on its own.
 
 ---
 
