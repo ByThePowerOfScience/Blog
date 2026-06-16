@@ -9,7 +9,7 @@ Basically, instead of manually doing things to the data in the box, you:
 
 
 I like to think of it as the buttons on a cash register: rather than manually manipulating wires and modifying the internal state of the cash register directly, it exposes certain things it can do through its buttons, and pressing each one does a different thing.  You can just view it from the outside as "a cash register", not "a box of wires that takes the shape of a cash register".
- 
+
 One point of solely interacting through an object's "interface" is that if someone puts the exact same buttons on something else, and they did the exact same thing, then it doesn't matter if it's a bunch of squirrels on the inside opening the drawer instead of wires, that thing's still a cash register.  That's where *polymorphism*, usually regarded as the primary principle of OOP, comes into play.
 
 &nbsp;
